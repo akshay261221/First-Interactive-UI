@@ -9,8 +9,9 @@
     <Button
         android:id="@+id/button_toast"
         style="button"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-light"
         android:onClick="displayToast"
@@ -18,7 +19,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="24sp"
+        android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -27,13 +28,14 @@
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
         android:background="@android:color/holo_red_dark"
         android:onClick="countUp"
         android:text="COUNT"
         android:textColor="@color/white"
-        android:textColorHint="@android:color/background_dark"
+        android:textColorHint="@color/purple_700"
         android:textColorLink="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,18 +45,19 @@
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="409dp"
-        android:layout_height="646dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@android:color/holo_orange_light"
         android:gravity="center_horizontal|center_vertical"
         android:text="0"
         android:textColor="@android:color/primary_text_light_nodisable"
         android:textSize="160sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintBottom_toBottomOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
